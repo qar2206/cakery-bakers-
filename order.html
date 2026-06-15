@@ -1,0 +1,187 @@
+<html>
+    <style>
+    
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --orange-clr: #e96c28;
+    --white-clr: #fff;
+    --black-clr: #000;
+    --grey-clr: #636363;
+    --light-grey: #c4c4c4;
+    --dwan-pink: #e7faf9;
+    --froster-mint: #dcfedc;
+    --brown-clr: #9B111E;
+}
+
+.logo{
+    z-index: 6;
+}
+
+.logo-txt{
+   font-size: 1.5rem;
+   color: var(--orange-clr);
+   font-weight: bold; 
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: var(--black-clr);
+}
+
+.navlist{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.navlinks{
+    color: #000;
+    font-weight: 500;
+}
+.active,.navlinks:hover{
+    color: var(--orange-clr);
+}
+
+
+header{
+    height: 13vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    background: none;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+</style>
+    <header>
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="#" class="logo-txt">
+                cake<span>ry.</span>
+            </a>
+        </div>
+
+        <ul class="navlist" id="navlist">
+            <li>
+                <a href="index.html" class="navlinks">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="navlinks">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="menu.html" class="navlinks">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="order.html" class="navlinks">
+                    Order
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="navlinks">
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#" class="icons-link">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#" class="icons-link">
+                <i class="fa-solid fa-shopping-cart"></i>
+            </a>
+
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </div>
+    </nav>
+</header>
+
+<body style="width:80%; margin:auto; background:#e7faf9; 
+padding:40px; 
+">
+
+    <h1 style="text-align:center; color:#8B4513; font-family:Georgia,serif;">
+         Place Your Order
+    </h1>
+
+    <form>
+
+        <input type="text"
+        placeholder="Full Name"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;">
+
+        <input type="email"
+        placeholder="Email Address"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;">
+
+        <input type="tel"
+        placeholder="Phone Number"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;">
+
+        <input type="text"
+        placeholder="Product Name (Cake, Pastry, Donut, etc.)"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;">
+
+        <input type="number"
+        placeholder="Quantity"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;">
+
+        <textarea
+        placeholder="Delivery Address"
+        rows="4"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;"></textarea>
+
+        <textarea
+        placeholder="Additional Instructions"
+        rows="3"
+        style="width:100%; padding:15px; margin:10px 0; border:1px solid #d4a373; border-radius:10px; font-size:16px;"></textarea>
+
+        <div style="text-align:center; margin-top:20px;">
+            <button type="submit"
+            style="background:#d2691e; color:white; padding:15px 40px; border:none; border-radius:30px; font-size:18px; cursor:pointer;">
+                Order Now
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>

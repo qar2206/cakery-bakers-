@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Delight Bakery Menu</title>
+</head>
+<style>
+    
+*{
+        margin: 100;
+        padding: 0;
+        box-sizing: border-box;  
+}
+
+:root{
+    --orange-clr: #e96c28;
+    --white-clr: #fff;
+    --black-clr: #000;
+    --grey-clr: #636363;
+    --light-grey: #c4c4c4;
+    --dwan-pink: #e7faf9;
+    --froster-mint: #dcfedc;
+    --brown-clr: #9B111E;
+}
+
+.logo{
+    z-index: 6;
+}
+
+.logo-txt{
+   font-size: 1.5rem;
+   color: var(--orange-clr);
+   font-weight: bold; 
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: var(--black-clr);
+}
+
+.navlist{
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.navlinks{
+    color: #000;
+    font-weight: 500;
+}
+.active,.navlinks:hover{
+    color: var(--orange-clr);
+}
+
+
+header{
+    height: 13vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    background: none;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+</style>
+<header>
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="#" class="logo-txt">
+                cake<span>ry.</span>
+            </a>
+        </div>
+
+        <ul class="navlist" id="navlist">
+            <li>
+                <a href="index.html" class="navlinks">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="navlinks">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="menu.html" class="navlinks">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="order.html" class="navlinks">
+                    Order
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="navlinks">
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#" class="icons-link">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#" class="icons-link">
+                <i class="fa-solid fa-shopping-cart"></i>
+            </a>
+
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </div>
+    </nav>
+</header>
+<body style="margin:0; padding:30px; background-image: url(images/pexels-cup-of-couple-8015239.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family:Georgia, serif;">
+<div style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url(images/pexels-cup-of-couple-8015239.jpg) center/cover no-repeat;
+filter:blur(8px);
+z-index:-1;">
+</div>
+
+    <h1 style="text-align:center; color:#4a0505; font-size:50px;">
+         Sweet Delight Bakery Menu 
+    </h1>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+
+        <div style="width:300px; background:none; padding:25px; border-radius:20px; 
+        box-shadow:0 8px 20px rgba(7, 0, 0, 0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Cakes</h2>
+            <hr>
+            <p>Chocolate Truffle - ₹850</p>
+            <p>Black Forest - ₹750</p>
+            <p>Red Velvet - ₹800</p>
+            <p>Butterscotch - ₹700</p>
+            <p>Blueberry Cheesecake - ₹900</p>
+        </div>
+
+
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Pastries</h2>
+            <hr>
+            <p>Chocolate Pastry - ₹120</p>
+            <p>Black Forest Pastry - ₹130</p>
+            <p>Red Velvet Pastry - ₹130</p>
+            <p>Butterscotch Pastry - ₹120</p>
+            <p>Pineapple Pastry - ₹120</p>
+        </div>
+
+      
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Cupcakes</h2>
+            <hr>
+            <p>Chocolate Cupcake - ₹80</p>
+            <p>Vanilla Cupcake - ₹80</p>
+            <p>Red Velvet Cupcake - ₹90</p>
+            <p>Blueberry Cupcake - ₹90</p>
+            <p>Oreo Cupcake - ₹90</p>
+        </div>
+
+     
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Desserts</h2>
+            <hr>
+            <p>Tiramisu - ₹150</p>
+            <p>Chocolate Mousse - ₹130</p>
+            <p>Cheesecake - ₹160</p>
+            <p>Brownie Sundae - ₹150</p>
+            <p>Fruit Custard - ₹120</p>
+        </div>
+
+      
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Cookies</h2>
+            <hr>
+            <p>Chocolate Chip - ₹50</p>
+            <p>Butter Cookies - ₹50</p>
+            <p>Almond Cookies - ₹60</p>
+            <p>Double Chocolate Cookies - ₹60</p>
+            <p>Peanut Cookies - ₹50</p>
+        </div>
+
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;"> Donuts</h2>
+            <hr>
+            <p>Chocolate Donut - ₹70</p>
+            <p>Strawberry Donut - ₹70</p>
+            <p>Glazed Donut - ₹60</p>
+            <p>Nutella Donut - ₹80</p>
+            <p>Sprinkle Donut - ₹70</p>
+        </div>
+
+
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;">Waffles</h2>
+            <hr>
+            <p>Belgian Waffle - ₹140</p>
+            <p>Chocolate Waffle - ₹150</p>
+            <p>Nutella Waffle - ₹160</p>
+            <p>Oreo Waffle - ₹160</p>
+            <p>Strawberry Waffle - ₹150</p>
+        </div>
+
+        
+        <div style="width:300px; background: none; padding:25px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border-top:6px solid #D2691E;">
+            <h2 style="text-align:center; color:#8B4513;">Breads & More</h2>
+            <hr>
+            <p>Croissant - ₹90</p>
+            <p>French Bread - ₹70</p>
+            <p>Garlic Bread - ₹80</p>
+            <p>Cheese Bread - ₹100</p>
+            <p>Baguette - ₹80</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
